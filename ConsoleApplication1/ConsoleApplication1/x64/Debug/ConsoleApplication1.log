@@ -1,0 +1,6 @@
+﻿  String.cpp
+C:\Users\s232405\Desktop\Introduction to  C++\Assingments\Task 1\Task_1\ConsoleApplication1\ConsoleApplication1\String.h(48,1): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\s232405\Desktop\Introduction to  C++\Assingments\Task 1\Task_1\ConsoleApplication1\ConsoleApplication1\String.cpp(16,19): error C2248: 'String::_Str': cannot access private member declared in class 'String'
+C:\Users\s232405\Desktop\Introduction to  C++\Assingments\Task 1\Task_1\ConsoleApplication1\ConsoleApplication1\String.h(11,10): message : see declaration of 'String::_Str'
+C:\Users\s232405\Desktop\Introduction to  C++\Assingments\Task 1\Task_1\ConsoleApplication1\ConsoleApplication1\String.h(6,7): message : see declaration of 'String'
+C:\Users\s232405\Desktop\Introduction to  C++\Assingments\Task 1\Task_1\ConsoleApplication1\ConsoleApplication1\String.cpp(18,27): error C3867: 'String::Length': non-standard syntax; use '&' to create a pointer to member
