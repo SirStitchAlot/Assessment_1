@@ -2,56 +2,45 @@
 #ifndef CUSTOM_STRING_HEADER
 #define CUSTOM_STRING_HEADER
 #include <iostream>
-using namespace std;
 class String
 {
 /*=================================================================================================================*///
-	//memeber zone??																			     				 //
-private:																											     //
-    char _Str[20]{};																								 //
-	int size=0;																									 //
-																													 //
+	//memeber zone??																			     				 
+private:																										    
+    char * m_data=new char[0];																								 
+	int size=0;																									 
+																													 
 /*=================================================================================================================*///
-	//construct zone																								 //
-public:																												 //
-	String(){};                       // this is a default construtor 												 //
-																													 //
-																													 //
-	String(const char *_str)  //this is to get a string to start doing all the calculations						     //
-	{																												 //
-	
-
-	}																												 //
-																													 //
-																													 //
-	String(const String& _other) {};              //I Don't what this is for yet									 //
-																													 //
-		~String() {};             //deconstructor																	 //
+	//construct zone																								 
+public:																												 
+	String();                       // this is a default construtor 												 
+																													 
+																													 
+	String(const char* _str);  //this is to get a string to start doing all the calculations						     
+																													 
+		
+																													 
+																													 
+																													 
+	String(const String& _other);              //I Don't what this is for yet									 
+																													 
+	~String();             //deconstructor																	 
 /*=================================================================================================================*///
 		//method zone
-
 public:
 
-	void printout() {
 
-		cout << _Str;
-
-	}
-
-
-		int Length(int size) const {
-
-			size = strlen(_Str);                      //method for getting the length of an array
-			return size;
-		}
+	int Length() const;
 		  
 
 
 
-//	char& CharacterAt(size_t _index);  // could use a for loop using Length ot use pointer to point to the location of the letter
-//	const char& CharacterAt(size_t _index) const;
-//
-//	bool EqualTo(const String& _other) const;
+	char& CharacterAt(int _index) 
+		                               // could use a for loop using Length to use pointer to point to the location of the letter
+
+	
+
+    bool EqualTo(const String& _other) const;
 //
 //	String& Append(const String& _str);
 //	String& Prepend(const String& _str);
