@@ -2,6 +2,7 @@
 #ifndef CUSTOM_STRING_HEADER
 #define CUSTOM_STRING_HEADER
 #include <iostream>
+#pragma warning(disable : 4996)
 class String
 {
 /*=================================================================================================================*///
@@ -35,22 +36,22 @@ public:
 
 
 
-	char& CharacterAt(int _index) 
+	char& CharacterAt(int _index);
 		                               // could use a for loop using Length to use pointer to point to the location of the letter
 
 	
 
     bool EqualTo(const String& _other) const;
-//
-//	String& Append(const String& _str);
-//	String& Prepend(const String& _str);
-//
-//	const char* CStr() const;
-//
-//	String& ToLower();
-//	String& ToUpper();
-//
-//	size_t Find(const String& _str);
+
+	//String& Append(const String& _str);
+	//String& Prepend(const String& _str);
+
+	const char* CStr() const;
+
+	String& ToLower();
+	String& ToUpper();
+
+	//size_t Find(const String& _str);
 //	size_t Find(size_t _startIndex, const String& _str);
 //
 //	String& Replace(const String& _find, const String& _replace);
@@ -67,6 +68,13 @@ public:
 //	char& operator[](size_t _index);
 //	const char& operator[](size_t _index) const;
 
+/*======================================================*/
+//operator overloading section
+
+
+	 
+	//ostream& operator <<(ostream& COUT, const String& _str);
+	//think about getting rid of this ^
 };
 
 #endif
